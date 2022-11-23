@@ -1,0 +1,259 @@
+<div class="container">
+    <h1>Mis planes</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>                <button>Ver</button>
+                <button>Eliminar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>                <button>Ver</button>
+                <button>Eliminar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>@twitter</td>
+            <td>
+                <button>Ver</button>
+                <button>Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <div class="card" >
+        <div class="card-body">
+          <h5 class="card-title">Seleccione un plan</h5>
+          <select class="form-select" aria-label="Default select example" name="" id="" >
+            <option value="" disabled selected>Seleccionar</option>
+            <option *ngFor="let element of planesDisponibles" (ngValue)="element.id">{{element.nombre_plan}}</option>
+          </select>
+          <h5 class="card-title">Nuevo Plan</h5>
+
+              <input type="text" (keyup)="nuevoPlan($event)" >
+              <button type="submit" class="btn btn-primary" (click)="nuevoPlanEnviar()"> Guardar </button>
+
+          <hr>
+        <div>
+          <div>
+            <div     data-bs-toggle="collapse"
+            data-bs-target="#navbarDia-1"
+            aria-controls="navbarDia-1"
+            aria-expanded="false">
+              <h5>Dia 1</h5>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end bg-secondary p-3"
+              id="navbarDia-1">
+              <div class="mb-1">
+              <div class="row">
+                <div class="col form-floating mb-3">
+                      <input class="form-control" type="text" id="floatingInput" value="Biceps con mancuernas">
+                      <label for="floatingInput">Nombre del ejercicio</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-6 form-floating mb-3">
+                      <input class="form-control"  id="nroSerie-1" type="number" value="1">
+                    <label for="nroSerie-1">Serie: </label>
+                    </div>
+                  <div class="col-6 form-floating mb-3">
+                      <input class="form-control"  id="nroRepeticiones-1" type="number" value="21">
+                    <label for="nroRepeticiones-1">Repeticiones: </label>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-6 form-floating mb-3">
+                      <input class="form-control"  id="nroSerie-2" type="number" value="2">
+                    <label for="nroSerie-2"> Serie: </label>
+                    </div>
+                  <div class="col-6 form-floating mb-3">
+                       <input class="form-control" id="nroRepeticiones-2"  type="number" value="18">
+                    <label for="nroRepeticiones-2">Repeticiones: </label>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-6 form-floating mb-3">
+                      <input class="form-control"  id="nroSerie-3" type="number" value="3">
+                    <label for="nroSerie-3"> Serie: </label>
+                    </div>
+                  <div class="col-6 form-floating mb-3">
+                       <input class="form-control" id="nroRepeticiones-3"  type="number" value="15">
+                    <label for="nroRepeticiones-3">Repeticiones: </label>
+                    </div>
+              </div>
+              <button class="btn btn-primary">Agregar serie</button>
+                </div>
+                <hr>
+              <button class="btn btn-primary">Agregar ejercicio</button>
+              </div>
+
+          </div> <!-- dia 1-->
+          <div>
+            <div     data-bs-toggle="collapse"
+            data-bs-target="#navbarDia-2"
+            aria-controls="navbarDia-2"
+            aria-expanded="false">
+            <h5>Dia 2</h5>
+            </div>
+            <div     class="collapse navbar-collapse justify-content-end bg-success"
+            id="navbarDia-2">
+            <div class="row">
+                <div class="col"><input class="form-control" type="text" placeholder="Nombre del ejercicio"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><input class="form-control" type="number" placeholder="Serie 1"></div>
+                <div class="col-6"><input class="form-control" type="number" placeholder="nro repeticiones"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><input class="form-control" type="number" placeholder="Serie 2"></div>
+                <div class="col-6"> <input class="form-control" type="number" placeholder="nro repeticiones"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><input class="form-control" type="number" placeholder="Serie 3"></div>
+                <div class="col-6"> <input class="form-control" type="number" placeholder="nro repeticiones"></div>
+            </div>
+            <button class="btn btn-primary">Agregar serie</button>
+            <button class="btn btn-primary">Agregar ejercicio</button>
+            </div>
+
+        </div> <!-- dia 2-->
+        <div>
+            <div     data-bs-toggle="collapse"
+            data-bs-target="#navbarDia-3"
+            aria-controls="navbarDia-3"
+            aria-expanded="false">
+            <h5>Dia 3</h5>
+            </div>
+            <div     class="collapse navbar-collapse justify-content-end bg-success"
+            id="navbarDia-3">
+            <div class="row">
+                <div class="col"><input class="form-control" type="text" placeholder="Nombre del ejercicio"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><input class="form-control" type="number" placeholder="Serie 1"></div>
+                <div class="col-6"><input class="form-control" type="number" placeholder="nro repeticiones"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><input class="form-control" type="number" placeholder="Serie 2"></div>
+                <div class="col-6"> <input class="form-control" type="number" placeholder="nro repeticiones"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><input class="form-control" type="number" placeholder="Serie 3"></div>
+                <div class="col-6"> <input class="form-control" type="number" placeholder="nro repeticiones"></div>
+            </div>
+            <button class="btn btn-primary">Agregar serie</button>
+            <button class="btn btn-primary">Agregar ejercicio</button>
+        </div>
+        </div> <!-- dia 3-->
+        <button>Ver resumen del plan</button>
+        <hr>
+        </div>
+        <div>
+            <table class="table">
+                <tbody>
+                
+                  <tr>
+                    <th >Nombre del Plan:</th>
+                    <th scope="2" >Hombre musculoso</th>
+                  </tr>
+                  <!-- Repetir-->
+                  <tr>
+                    <th >Dia:</th>
+                    <th scope="2" >1</th>
+                  </tr>
+                  <tr>
+                    <th >Nombre Ejercicio</th>
+                    <th >Series</th>
+                    <th>Repeticiones</th>
+                  </tr>
+               
+
+                  <tr>
+                    <td>Biceps con mancuernas</td>
+                    <td>3</td>
+                    <td> 21 - 18 - 15</td>
+                  </tr>
+                  <tr>
+                    <td>Cuadriceps con maquina</td>
+                    <td>4</td>
+                    <td> 21 - 18 - 15 - 12</td>
+                  </tr>
+                  <tr>
+                    <td>Hombros con mancuernas</td>
+                    <td>3</td>
+                    <td> 21 - 18 - 15</td>
+                  </tr>
+                    <!-- Repetir-->
+                                      <!-- Repetir-->
+                  <tr>
+                    <th >Dia:</th>
+                    <th scope="2" >2</th>
+                  </tr>
+                  <tr>
+                    <th >Nombre Ejercicio</th>
+                    <th >Series</th>
+                    <th>Repeticiones</th>
+                  </tr>
+               
+
+                  <tr>
+                    <td>Biceps con mancuernas</td>
+                    <td>3</td>
+                    <td> 21 - 18 - 15</td>
+                  </tr>
+                  <tr>
+                    <td>Cuadriceps con maquina</td>
+                    <td>4</td>
+                    <td> 21 - 18 - 15 - 12</td>
+                  </tr>
+                  <tr>
+                    <td>Hombros con mancuernas</td>
+                    <td>3</td>
+                    <td> 21 - 18 - 15</td>
+                  </tr>
+                    <!-- Repetir-->
+                                      <!-- Repetir-->
+                  <tr>
+                    <th >Dia:</th>
+                    <th scope="2" >3</th>
+                  </tr>
+                  <tr>
+                    <th >Nombre Ejercicio</th>
+                    <th >Series</th>
+                    <th>Repeticiones</th>
+                  </tr>
+               
+
+                  <tr>
+                    <td>Biceps con mancuernas</td>
+                    <td>3</td>
+                    <td> 21 - 18 - 15</td>
+                  </tr>
+                  <tr>
+                    <td>Cuadriceps con maquina</td>
+                    <td>4</td>
+                    <td> 21 - 18 - 15 - 12</td>
+                  </tr>
+                  <tr>
+                    <td>Hombros con mancuernas</td>
+                    <td>3</td>
+                    <td> 21 - 18 - 15</td>
+                  </tr>
+                    <!-- Repetir-->
+                </tbody>
+              </table>
+        </div><!-- Resumen del plan -->
+        </div>
+      </div>
+</div>

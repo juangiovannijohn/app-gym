@@ -1,0 +1,122 @@
+{
+  "listado_planes": [
+    {
+      "id": 1,
+      "nombre_plan": "Hombre musculoso"
+    },
+    {
+      "id": 2,
+      "nombre_plan": "Mujer definición"
+    },
+    {
+      "nombre_plan": "",
+      "id": 3
+    },
+    {
+      "nombre_plan": "hola",
+      "id": 4
+    }
+  ],
+  "listado_ejercicios": [
+    {
+      "id": 1,
+      "nombre_ejercicio": "Remo sentado"
+    },
+    {
+      "id": 2,
+      "nombre_ejercicio": "Remo barra"
+    },
+    {
+      "id": 3,
+      "nombre_ejercicio": "Jalon polea"
+    }
+  ],
+  "planes_asignados": [
+    {
+      "id": 1,
+      "id_plan": 1,
+      "id_usuario": 1
+    },
+    {
+      "id": 2,
+      "id_plan": 2,
+      "id_usuario": 2
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "user_name": "Juan",
+      "user_email": "rodriguezjuanm@live.com",
+      "user_pass": "abc"
+    },
+    {
+      "id": 2,
+      "user_name": "Noelia",
+      "user_email": "noealfaro_92@hotmail.com",
+      "user_pass": "123"
+    }
+  ],
+  "plan_individual": [
+    {
+      "id": 1,
+      "id_plan_asignado": 1,
+      "dia_nro": 1,
+      "id_ejercicio": 1,
+      "serie_nro": 1,
+      "repeticiones_nro": 21,
+      "ejercicio_peso": 0,
+      "ejercicio_fecha": ""
+    },
+    {
+      "id": 2,
+      "id_plan_asignado": 1,
+      "dia_nro": 1,
+      "id_ejercicio": 1,
+      "serie_nro": 2,
+      "repeticiones_nro": 18,
+      "ejercicio_peso": 0,
+      "ejercicio_fecha": ""
+    },
+    {
+      "id": 3,
+      "id_plan_asignado": 1,
+      "dia_nro": 1,
+      "id_ejercicio": 1,
+      "serie_nro": 3,
+      "repeticiones_nro": 15,
+      "ejercicio_peso": 0,
+      "ejercicio_fecha": ""
+    },
+    {
+      "id": 4,
+      "id_plan_asignado": 1,
+      "dia_nro": 1,
+      "id_ejercicio": 2,
+      "serie_nro": 1,
+      "repeticiones_nro": 15,
+      "ejercicio_peso": 0,
+      "ejercicio_fecha": ""
+    },
+    {
+      "id": 5,
+      "id_plan_asignado": 1,
+      "dia_nro": 1,
+      "id_ejercicio": 2,
+      "serie_nro": 2,
+      "repeticiones_nro": 12,
+      "ejercicio_peso": 0,
+      "ejercicio_fecha": ""
+    },
+    {
+      "id": 6,
+      "id_plan_asignado": 1,
+      "dia_nro": 1,
+      "id_ejercicio": 2,
+      "serie_nro": 3,
+      "repeticiones_nro": 10,
+      "ejercicio_peso": 0,
+      "ejercicio_fecha": ""
+    }
+  ]
+}
